@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Movie and Series Checklist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0; /* Приятный светлый фон */
+            color: #000; /* Черный текст */
+        }
+        h1 {
+            text-align: center;
+            font-size: 4em;
+            font-weight: bold;
+            color: #e62429; /* Цвет логотипа Marvel */
+            text-transform: uppercase;
+            letter-spacing: 8px; /* Широкое расстояние между буквами */
+            margin: 0;
+            font-family: 'Arial Black', sans-serif;
+        }
+        #subtitle {
+            text-align: center;
+            font-size: 1.5em;
+            font-style: italic;
+            color: #333;
+            margin: 10px 0 30px;
+        }
+        #count {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 20px; /* Отступ снизу для отделения от списка */
+        }
+        .phase, .series {
+            margin-bottom: 30px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        li {
+            margin: 10px 0;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+        li input[type="checkbox"] {
+            margin-right: 10px;
+            transform: scale(1.5); /* Увеличенные чекбоксы */
+        }
+        li.checked {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Marvel</h1>
+    <div id="subtitle">Фильмы и сериалы</div>
+    <div id="count"></div>
+
+    <div class="phase">
+        <h2>Первая фаза</h2>
+        <ul id="phase1">
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-0"> Железный человек (2008)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-1"> Невероятный Халк (2008)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-2"> Железный человек 2 (2010)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-3"> Тор (2011)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-4"> Первый мститель (2011)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-5"> Мстители (2012)</li>
+        </ul>
+    </div>
+
+    <div class="phase">
+        <h2>Вторая фаза</h2>
+        <ul id="phase2">
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-6"> Железный человек 3 (2013)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-7"> Тор 2: Царство тьмы (2013)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-8"> Первый мститель: Другая война (2014)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-9"> Стражи Галактики (2014)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-10"> Мстители: Эра Альтрона (2015)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-11"> Человек-муравей (2015)</li>
+        </ul>
+    </div>
+
+    <div class="phase">
+        <h2>Третья фаза</h2>
+        <ul id="phase3">
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-12"> Первый мститель: Противостояние (2016)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-13"> Доктор Стрэндж (2016)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-14"> Стражи Галактики. Часть 2 (2017)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-15"> Человек-паук: Возвращение домой (2017)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-16"> Тор: Рагнарек (2017)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-17"> Черная пантера (2018)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-18"> Мстители: Война бесконечности (2018)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-19"> Человек-муравей и Оса (2018)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-20"> Капитан Марвел (2019)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-21"> Мстители: Финал (2019)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-22"> Человек-паук: Вдали от дома (2019)</li>
+        </ul>
+    </div>
+
+    <div class="phase">
+        <h2>Четвертая фаза</h2>
+        <ul id="phase4">
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-23"> Черная вдова (2021)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-24"> Шан-Чи и легенда десяти колец (2021)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-25"> Вечные (2021)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-26"> Человек-паук: Нет пути домой (2021)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-27"> Доктор Стрэндж: В мультивселенной безумия (2022)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-28"> Тор: Любовь и гром (2022)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-29"> Черная пантера: Ваканда навеки (2022)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-30"> Ночной оборотень (2022)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-31"> Стражи Галактики: Праздничный спецвыпуск (2022)</li>
+        </ul>
+    </div>
+
+    <div class="phase">
+        <h2>Пятая фаза</h2>
+        <ul id="phase5">
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-32"> Человек-муравей и Оса: Квантомания (2023)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-33"> Стражи Галактики. Часть 3 (2023)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-34"> Марвелы (Капитан Марвел 2) (2023)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-35"> Дэдпул и Росомаха (2024)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-36"> Капитан Америка: Дивный новый мир (2025)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-37"> Громовержцы (2025)</li>
+        </ul>
+    </div>
+
+    <div class="phase">
+        <h2>Шестая фаза</h2>
+        <ul id="phase6">
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-38"> Фантастическая четверка (2025)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-39"> Блэйд (2025)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-40"> Мстители 5 (2026)</li>
+            <li><input type="checkbox" class="movie-checkbox" id="checkbox-41"> Мстители: Секретные войны (2027)</li>
+        </ul>
+    </div>
+
+    <div class="series">
+        <h2>Сериалы</h2>
+        <ul id="series1">
+            <li><input type="checkbox" class="series-checkbox" id="checkbox-42"> Ванда/Вижн (2021)</li>
+            <li><input type="checkbox" class="series-checkbox" id="checkbox-43"> Сокол и Зимний солдат (2021)</li>
+            <li><input type="checkbox" class="series-checkbox" id="checkbox-44"> Локи (1-й сезон, 2021)</li>
+            <li><input type="checkbox" class="series-checkbox" id="checkbox-45"> Что, если? (1-й сезон, 2021)</li>
+            <li><input type="checkbox" class="series-checkbox" id="checkbox-46"> Соколиный глаз (2021)</li>
+            <li><input type="checkbox" class="series-checkbox" id="checkbox-47"> Лунный рыцарь (2022)</li>
+            <li><input type="checkbox" class="series-checkbox" id="checkbox-48"> Мисс Марвел (2022)</li>
+            <li><input type="checkbox" class="series-checkbox" id="checkbox-49"> Женщина-Халк: Адвокат (2022)</li>
+        </ul>
+    </div>
+
+    <div class="series">
+        <h2>Сериалы (продолжение)</h2>
+        <ul id="series2">
+            <li><input type="checkbox" class="series-checkbox" id="checkbox-50"> Секретное вторжение (2023)</li>
+            <li><input type="checkbox" class="series-checkbox" id="checkbox-51"> Локи (2-й сезон, 2023)</li>
+            <li><input type="checkbox" class="series-checkbox" id="checkbox-52"> Что, если? (2-й сезон, 2023)</li>
+            <li><input type="checkbox" class="series-checkbox" id="checkbox-53"> Эхо (2024)</li>
+            <li><input type="checkbox" class="series-checkbox" id="checkbox-54"> Агата: Дневники Даркхолда (2024)</li>
+            <li><input type="checkbox" class="series-checkbox" id="checkbox-55"> Очи Ваканды (2024)</li>
+            <li><input type="checkbox" class="series-checkbox" id="checkbox-56"> Ваш дружелюбный сосед Человек-паук (2024)</li>
+            <li><input type="checkbox" class="series-checkbox" id="checkbox-57"> Зомби Marvel (2024)</li>
+            <li><input type="checkbox" class="series-checkbox" id="checkbox-58"> Сорвиголова: Рожденный заново (2025)</li>
+            <li><input type="checkbox" class="series-checkbox" id="checkbox-59"> Железное сердце (2025)</li>
+        </ul>
+    </div>
+
+    <script>
+        // Функция для обновления счетчика
+        function updateCount() {
+            const totalItems = document.querySelectorAll('input[type="checkbox"]').length;
+            const checkedItems = document.querySelectorAll('input[type="checkbox"]:checked').length;
+            document.getElementById('count').innerText = `Зачеркнуто: ${checkedItems} из ${totalItems}`;
+        }
+
+        // Обработчик изменения состояния чекбокса
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                if (this.checked) {
+                    this.parentElement.classList.add('checked');
+                } else {
+                    this.parentElement.classList.remove('checked');
+                }
+                updateCount();
+            });
+        });
+
+        // Инициализация счетчика при загрузке страницы
+        updateCount();
+    </script>
+
+</body></html>
